@@ -21,7 +21,7 @@ class StudentController (
         request: StudentRequest
     ): StudentResponse{
         logger.info("Creating Student ${request.name}")
-        return studentService.createStudent(request)
+        return studentService.createdStudent(request)
     }
 
     @GetMapping("/api/students")

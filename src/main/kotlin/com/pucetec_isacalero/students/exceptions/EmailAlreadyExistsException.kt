@@ -1,4 +1,5 @@
 package com.pucetec_isacalero.students.exceptions
 
-class EmailAlreadyExistsException {
-}
+class EmailAlreadyExistsException (
+    override val message: String,
+): RuntimeException()
